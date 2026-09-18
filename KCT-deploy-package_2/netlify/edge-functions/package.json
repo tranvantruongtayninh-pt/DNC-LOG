@@ -1,9 +1,0 @@
-{
-  "name": "kct-otp-functions",
-  "version": "1.0.0",
-  "private": true,
-  "description": "Netlify Functions xử lý xác thực OTP qua Telegram cho hệ thống KCT",
-  "dependencies": {
-    "firebase-admin": "^12.6.0"
-  }
-}
