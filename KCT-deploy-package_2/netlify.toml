@@ -1,3 +1,12 @@
-[[edge_functions]]
-  path = "/*"
-  function = "basic-auth"
+# Đặt file này tại GỐC của thư mục base directory mà Netlify đang deploy
+# (tức cùng cấp với index.html, ví dụ trong KCT-deploy-package_2/ nếu đó là Base directory)
+#
+# Sau khi thêm file này, vào Netlify Dashboard → Deploys → Trigger deploy →
+# "Clear cache and deploy site" để Netlify cài đặt dependency (firebase-admin)
+# và build lại các Functions.
+
+[build]
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
